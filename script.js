@@ -76,3 +76,18 @@
 // }
 
 // console.log(swapPairs([1,3,5,'Brandon']))
+
+// BONUS: Remove Duplicates
+// Given a sorted array, remove duplicate values. Because array elements are already in order, all duplicate values will be grouped together. If you already made the Remove At function, you are welcome to use that! If you solved this using nested loops, for an extra challenge, try to do it without any nested loops!
+
+// Examples:
+
+// removeDupes([-2,-2,3.14,5,5,10]) => [-2,3.14,5,10]
+// removeDupes([9,19,19,19,19,19,29]) => [9,19,29]
+
+function removeDupes(arr){
+  let unique = [...arr, new Set(arr)]
+  return unique
+}
+
+console.log(removeDupes([1,1,1,4,5,6,6,7,8]))
