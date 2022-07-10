@@ -57,3 +57,22 @@
 // }
 
 // console.log(removeAt([1,2,3,5,6], 3))
+
+// BONUS: Swap Pairs
+// Swap positions of successive pairs of values of given array. If length is odd, do not change the final element.
+
+// Examples:
+
+// insertAt([1,2,3,4]) => [2,1,4,3]
+// insertAt(["Brendan",true,42]) => [true,"Brendan",42]
+
+
+// function swapPairs(arr){
+//   for (let i = 0; i < arr.length; i+=2){
+//     if(arr.length % 2 !== 0) return
+//     [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]]
+//   }
+//   return arr
+// }
+
+// console.log(swapPairs([1,3,5,'Brandon']))
